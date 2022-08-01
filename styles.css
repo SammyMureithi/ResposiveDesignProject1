@@ -1,0 +1,303 @@
+/*  Fonts
+-----
+font-family: 'Lora', serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* =================
+Typography
+================= */
+
+h1 {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    color: #143774;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.subtitle {
+    font-weight: 700;
+    color: #1792d2;
+    font-size: .75rem;
+    margin: 0;
+}
+
+/* =================
+Layout
+================= */
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    background: #f8f8f8;
+    padding: 2em 0;
+}
+
+@media (max-width: 675px) {
+    .container-nav {
+        flex-direction: column;
+    }
+    
+    header {
+        text-align: center;
+    }
+}
+
+/* navigation */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin-left: 2em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #707070;
+    font-weight: 700;
+    padding: .25em 0;
+}
+
+
+nav a:hover,
+nav a:focus {
+    color: #1792d2;
+}
+
+.current-page {
+    border-bottom: 1px solid #707070;
+}
+
+.current-page:hover {
+    color: #707070;
+}
+
+@media (max-width: 675px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav li {
+        margin: .5em 0;
+    }
+}
+
+.left{
+ 
+    width: 70%;
+    height: fit-content;
+    border-radius: solid green 2px;
+}
+.left img{
+    width: 100%;
+}
+
+.right{
+    width: 24%;
+    border-radius: solid green 2px;
+    height: fit-content;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+   margin: 0px auto;
+}
+
+.top-left{
+    border-bottom: 1px solid #707070;
+}
+.image-date{
+    display: flex;
+    flex-direction: row;
+    color: #707070;
+}
+.recent-left .image-date :nth-child(1){
+    border-right: solid grey 2px;
+    padding-right: 0.5em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+}
+.image-date :nth-child(1){
+    border-right: solid grey 2px;
+    padding-right: 0.5em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+}
+.description{
+    color: #143774;
+    font-size: 1.5em;
+}
+
+.start-span{
+    color: #707070;
+    letter-spacing: 3.6px;
+}
+.second-span{
+    letter-spacing: 3.6px;
+    color: #1792D2;
+}
+.continue{
+    letter-spacing: 2.8px;
+    color: #1792D2;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+.cardright .continue{
+    letter-spacing: 2.8px;
+    color: #1792D2;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+.card-list{
+    display: flex;
+    flex-direction: column;
+    
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+  
+}
+
+.card img{
+    width: 100%;
+   
+}
+
+.cardleft{
+    width:30%;
+}
+.cardright{
+    width: 60%;
+}
+
+.cardright h1{
+    font-size: 1.75em;
+    color: #143774;
+}
+.cardright p{
+    font-size: 1.125em;
+    color: 707070;
+}
+.card-list{
+    margin-top: 1.5em;
+}
+.readmore{
+    color: greenyellow;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+.smaller{
+    font-size: 0.7em;
+}
+.about-post{
+    text-align: center;
+    border: 20px solid #EBEBEB;
+}
+.about-post img{
+    width: 80%;
+}
+.recent-post{
+    border: 20px solid #EBEBEB;
+    text-align: center;
+}
+.posts img{
+    width: 80%;
+}
+.posts{
+    border-bottom: 1px solid #707070;
+    margin-top: 30px;
+}
+.about-right{
+    
+    width: 30%;
+    height: fit-content;
+}
+.about-left{
+   
+    width: 65%;
+    height: fit-content;
+
+}
+.about{
+    max-width: 900px;
+}
+.about-left img{
+    width: 100%;
+}
+.myProfile{
+    width: 100%;
+    font-size: 1.125em;
+}
+.abt-span1{
+    color: #707070;
+    font-weight: bold;
+}
+.recent-left{
+    width: 70%;
+    height: fit-content;
+}
+.recent-right{
+    
+    width: 25%;
+    height: fit-content;
+}
+.post{
+    max-width: 960px;
+}
+@media screen and (max-width: 675px) {
+    main{
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 675px){
+    .description{
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 675px){
+    .card{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;  
+    }
+    .cardleft{
+        width: 100%;
+    }
+    .card img{
+        width: 100%;
+    }
+    .image-date{
+       justify-content: flex-end;
+    }
+    .cardright{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+}
